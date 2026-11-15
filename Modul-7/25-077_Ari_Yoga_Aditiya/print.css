@@ -1,0 +1,11 @@
+/* File ini dapat dipakai jika stylesheet cetak dipisah.
+   Aturan utama @media print juga tersedia di style.css melalui browser. */
+@media print {
+    body { background: #fff; padding: 0; }
+    .container { max-width: none; }
+    .panel, .summary-card { box-shadow: none; break-inside: avoid; }
+    .no-print, .filter-panel, .footer { display: none !important; }
+    .chart-wrap { height: 280px; }
+    table { font-size: 11px; }
+    th, td { padding: 8px; }
+}
